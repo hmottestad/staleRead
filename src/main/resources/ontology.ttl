@@ -1,0 +1,32 @@
+@prefix : <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix meta: <http://acandonorway.github.com/XmlToRdf/ontology.ttl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+<http://www.arkivverket.no/standarder/noark5/arkivstruktur/> rdf:type owl:Ontology .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent
+:parent rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :parentTransitive .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/parentTransitive
+:parentTransitive rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty .
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper
+:arkivskaper rdf:type owl:ObjectProperty ;
+             owl:propertyChainAxiom ( :parentTransitive
+                                      :arkivskaper
+                                    ) .
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+#Top node
+
+<http://example.com/base/journalpost--journalpost%3A200033--test--2016-03-04T18%3A28%3A42> 	<http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent> <http://example.com/base/saksmappe--sak%3A200080--test--2016-03-04T18%3A21%3A41> .

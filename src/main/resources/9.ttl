@@ -1,0 +1,3 @@
+# Bottom node with arkiv:arkivskaper
+
+<http://example.com/base/arkiv--arkiv%3A200026--test--2014-01-01T12%3A00%3A00> <http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper> <http://data.einnsyn.no/virksomhet/test> .
