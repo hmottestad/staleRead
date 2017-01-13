@@ -257,6 +257,7 @@ class StardogServiceTemp {
         connection.begin();
         connection.add().io().format(format).context(namedGraph).stream(data);
         connection.commit();
+        connectionPool.release(connection);
 
 
     }
